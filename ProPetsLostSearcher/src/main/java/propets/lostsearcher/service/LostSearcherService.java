@@ -46,6 +46,7 @@ public class LostSearcherService{
 			Set<String> ids = matches.stream().map(e -> e.getId()).collect(Collectors.toSet());
 			Map<String, Set<String>> result = new HashMap<>();
 			result.put(lostEntityDto.getUserLogin(), ids);
+			
 			dispatcherService.matches().send(MessageBuilder.withPayload(result).build());	
 	}
 }
