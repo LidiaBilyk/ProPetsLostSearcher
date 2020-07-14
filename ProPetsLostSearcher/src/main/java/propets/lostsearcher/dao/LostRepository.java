@@ -1,10 +1,9 @@
 package propets.lostsearcher.dao;
 
-import org.springframework.data.mongodb.repository.MongoRepository;
-
+import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
 import propets.lostsearcher.dto.LostEntityDto;
 
 
-public interface LostRepository extends MongoRepository<LostEntityDto, String>{
+public interface LostRepository extends ElasticsearchRepository<LostEntityDto, String>{
 
 }

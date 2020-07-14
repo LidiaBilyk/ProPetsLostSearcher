@@ -9,8 +9,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class LocationDto {	
-	double longitude;
-	double latitude;
-
+public class LocationEntityDto {
+	double lat;
+	double lon;
 }
